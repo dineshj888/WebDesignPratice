@@ -7,3 +7,6 @@
 #div1{
     color: green;
 }
+[name="div2"]{
+ color: grey;
+}
