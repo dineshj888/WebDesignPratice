@@ -1,8 +1,26 @@
 <html>
-    <head>
-        <script src="#" type="text/javascript"></script>
-    </head>
-    <body>
-        
-    </body>
+  <head>
+    <script type="text/javascript">
+        function sayHello(){
+            alert("hello there");
+        }
+        function sayHi(){
+            alert("say Hi");
+        }
+        function sayGreet(){
+            alert("MouseEnter");
+        }
+        function sayBye(){
+            alert("MouseLeave");
+            }
+    </script>
+  </head>
+<body onload="sayHello()">
+    <p>javascript intro</p>
+    <center>
+        <button name="btn1" onclick="sayHi()">HIT ME</button><br>
+    </center>
+      <button name="btn1" onmouseenter="sayGreet()">onMouseEnter</button><br>
+    <button name="btn1" onmouseleave="sayBye()">OnMouseLeave</button>
+</body>
 </html>
