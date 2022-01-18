@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
- 
-    <!-- Event handling-->
-    <body>
-        <a href="#" id="test">Wiztoonz</a>
-        <script type="text/javascript">
-            function changestatus(){
-                window.status="clickhere"
-                return true;
-            }
-            function changebackstatus{
-                window.status='';
-            }
-            document.getElementById("test").onmouseover=changestatus;
-            document.getElementById("test").onmouseout=changebackstatus;
-        </script>
-    </body>
+
+<!-- Event handling-->
+
+<body>
+    <a href="#" id="test">Wiztoonz</a>
+    <script type="text/javascript">
+
+        function changestatus() {
+            document.getElementById("test").innerHTML = "Function changestatus called";
+            return true;
+        }
+        function changebackstatus() {
+            document.getElementById("test").innerHTML = "Function changebackstatus called";
+            return true;
+        }
+        function alertcaller() {
+            alert("Event Click Triggered");
+        }
+        document.getElementById("test").onmouseover = changestatus;
+        document.getElementById("test").onmouseout = changebackstatus;
+        document.getElementById("test").addEventListener("click", alertcaller, true);
+    </script>
+</body>
+
 </html>
