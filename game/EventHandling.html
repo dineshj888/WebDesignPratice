@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ 
+    <!-- Event handling-->
+    <body>
+        <a href="#" id="test">Wiztoonz</a>
+        <script type="text/javascript">
+            function changestatus(){
+                window.status="clickhere"
+                return true;
+            }
+            function changebackstatus{
+                window.status='';
+            }
+            document.getElementById("test").onmouseover=changestatus;
+            document.getElementById("test").onmouseout=changebackstatus;
+        </script>
+    </body>
+</html>
