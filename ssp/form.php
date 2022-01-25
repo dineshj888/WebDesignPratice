@@ -1,5 +1,6 @@
 <html>
-    <head>
+   
+   <head>
         <title>Wiztoonz form</title>
     </head>
     <body>
@@ -9,12 +10,7 @@
 				<p>Password: <input type="password" name="password" size="12"/> </p>
 				<p> <input type="submit" name="submit" value="login"/> </p>
 				<p> <input type="reset" name="reset" value="clearForm"/> </p>
-				
-
-
             </form>    
-    
-    
     
     </body>
 </html>
