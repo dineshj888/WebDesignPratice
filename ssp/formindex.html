@@ -35,7 +35,7 @@
                                 </p>
                             </td>
                             <td>
-                                <input type="text" name="fname" id="lname" placeholder="Last Name"
+                                <input type="text" name="lname" id="lname" placeholder="Last Name"required
                                     style="text-align: center" /><br />
                             </td>
                         </tr>
@@ -46,7 +46,7 @@
                             </td>
                             <td>
                                 <input type="email" name="email" id="email" placeholder="abc123@email.com"
-                                    style="text-align: center" /><br />
+                                    style="text-align: center" required/><br />
                             </td>
                         </tr>
                         <tr>
@@ -56,7 +56,7 @@
                             </td>
                             <td>
                                 <input type="password" name="passwd" id="passwd" placeholder="password"
-                                    style="text-align: center" /><br />
+                                    style="text-align: center" required /><br />
                             </td>
                         </tr>
                         <tr>
@@ -66,7 +66,7 @@
                             </td>
                             <td>
                                 <input type="tel/number" name="mnumb" id="mnumb" placeholder="Ex: 9876543210"
-                                    style="text-align: center" pattern="[0-9]{10}" minlength="10"
+                                    style="text-align: center" pattern="[0-9]{10}" minlength="10" required
                                     maxlength="10" /><br />
                             </td>
                         </tr>
@@ -75,7 +75,7 @@
                                 <p>Gender</p>
                             </td>
                             <td style="text-align: justify;">
-                                <input type="radio" name="gender" id="gender" value="male">Male</input>
+                                <input type="radio" name="gender" id="gender" value="male" required>Male</input>
                                 <input type="radio" name="gender" id="gender" value="female">Female</input>
                                 <input type="radio" name="gender" id="gender" value="transgender">Transgender</input>
                             </td>
@@ -84,7 +84,7 @@
                             <td>State</td>
                             <td>
                                 <select name="state" id="state" required>
-                                    <option value="" style="text-align: center;">---</option>
+                                    <option value="" style="text-align: center;">-Select Option-</option>
                                     <option value="Andhra Pradesh">Andhra Pradesh</option>
                                     <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                                     <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -126,16 +126,19 @@
                         </tr>
                         <tr>
                             <td>
-                                <p>Address</p>
+                                <p style="text-align: top;">Address</p>
                             </td>
                             <td>
-                                <input type="textarea" placeholder="Enter Your Addresss" min="50" max="200" id="address"
-                                    name="address" style="height: 75px; width: 202.5px;" />
+                                <textarea placeholder="Enter Your Addresss" min="50" max="200" id="address"
+                                    name="address" style="height: 75px; width: 202.5px;" required > </textarea>
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="reset"></td>
-                            <td><input type="submit"></td>
+                            <td></td>
+                            <td>
+                                <input type="reset">
+                                <input type="submit">
+                            </td>
                         </tr>
                     </tbody>
                 </table>
