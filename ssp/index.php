@@ -45,7 +45,11 @@ if($db_connect -> connect_error){
 }
 echo "mysql db connected";
 
-if($db_connect->query("create table employee(empID int not null auto_increment,empName varchar(40) not null,empSal double(10) not null,empMail varchar(40) not null, primary key(empID)"))
+if($db_connect->query("create table employee(empID int not null auto_increment,
+empName varchar(40) not null,
+empSal double(10) not null,
+empMail varchar(40) not null, 
+primary key(empID);"))
 {
     echo "database created successfully";
 }
