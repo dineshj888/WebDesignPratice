@@ -1,5 +1,5 @@
 <?php
-include("indexT.php");
+include("index.php");
 ?>
 
 
